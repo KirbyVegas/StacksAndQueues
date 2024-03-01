@@ -1,0 +1,46 @@
+1.
+Steps:
+1. 3
+2. 3, 4
+3. returns 4
+4. 15
+5. 15,10
+6. 15, 10/4
+
+2.
+Steps:
+1. 1
+2. 7
+3. 18,7
+4. 7/2, 18
+5. returns 18, queue is 7/2
+6. returns 7/2, queue is empty
+
+
+3. Provide an algorithm that finds x in a dequeue in o(n/2)
+
+Because a deque is a double ended queue, it functions similarly to a double linked list. We are able to iterate
+through it starting from both ends. So to make an algorithm to find an element y, we have to make two variables that start at
+either end of the list, then have them increment through the list getting closer to the middle until the element is found.
+The average time it would take to find the element would be n/2, with n being the number of elements in the deque, because the
+loop will terminate once the pointers reach each other in the middle of the deque.
+
+
+
+8.
+The time complexity of BalancedBrackets is O(n), with n being the length of the input
+string. In all cases, whether the brackets are balanced or not, we have to go through the whole input
+The space complexity is also O(n) with n being the length of the input string
+because we have to make a stack that could be up to the length of the original array
+to check if it is balanced.
+
+The time complexity of DNAToRNA is O(n) with n being the length of the input string because
+we have to iterate through every character in the input to make sure we change
+all of the T's to U's.
+The space complexity is also O(n) because we have to split up the input and make an array the length of the input string.
+
+The time complexity of the aminoAcids method is O(n) where n is the length of the input RNA string
+because we have to iterate through the whole input to split it into triplets and then check what each
+triplet codes to.
+The space complexity is O(n) with n being the because we have to store each triplet in a queue
+and then assign the result string, both of which depend on the input size.
